@@ -7,7 +7,7 @@ namespace LinqWithLambda
     {
         static void Main(string[] args)
         {
-            ITest customersTest = new TestSelectLinq();
+            ITest customersTest = new TestSelectLinqWithLambda();
             customersTest.Test();
 
             Console.Read();
