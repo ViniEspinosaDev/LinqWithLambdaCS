@@ -15,13 +15,13 @@ namespace LinqWithLambda.Tests
             var lastCustomer = customers.Last();
             Console.WriteLine(lastCustomer.Name);
 
-            var lastOrDefaultCustomer = customers.LastOrDefault();
-            Console.WriteLine(lastOrDefaultCustomer.Name);
-
             var lastCustomerLam = customers.Last(customer => customer.Id == 45);
             Console.WriteLine(lastCustomerLam.Name);
 
-            var lastestCustomers = customers.Last(customer => customer.Id > 45);
+            var lastOrDefaultCustomer = customers.LastOrDefault();
+            Console.WriteLine(lastOrDefaultCustomer.Name);
+
+            var lastestCustomers = customers.LastOrDefault(customer => customer.Id > 45);
             Console.WriteLine(lastestCustomers.Name);
 
         }
