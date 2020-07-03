@@ -13,15 +13,8 @@ namespace LinqWithLambda.Tests
 
             // Consulta em Linq with Lambda para retornar apenas o nome do customer
             var nameLinqWithLambdaQuery = customers.Select(customer => customer.Name);
-            //Console.WriteLine("\n|| Teste Lambda - Retorna apenas Name de cada customer ||\n");
-
-            /*foreach (var customer in nameLinqWithLambdaQuery)
-            {
-                Console.WriteLine(customer);
-            }*/
 
             // Consulta em Linq with Lambda para retornar o nome do customer e o id do customer
-            Console.WriteLine("\n|| Teste Lambda - Retorna Id e Name de cada customer ||\n");
             var nameAndIdlinqWithLambdaQuery = customers
                                                 //.Select(customer => new { customer.Id, customer.Name });
                                                 .Select(customer => new { Description = "Id: " + customer.Id + " Name: " + customer.Name });
