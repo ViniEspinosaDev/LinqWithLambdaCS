@@ -7,7 +7,7 @@ namespace LinqWithLambda
     {
         static void Main(string[] args)
         {
-            ITest customersTest = new TestSkip();
+            ITest customersTest = new TestJoin();
             customersTest.Test();
 
             Console.Read();

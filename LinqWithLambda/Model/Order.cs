@@ -12,5 +12,10 @@ namespace LinqWithLambda.Model
         public int CustomerId { get; set; }
         public DateTime CreatedDate { get; set; }
         public Decimal TotalValue { get; set; }
+
+        public override string ToString()
+        {
+            return "Id: " + this.Id.ToString() + " || CustomerId: " + this.CustomerId.ToString() + " || CreatedDate: " + this.CreatedDate.ToString("dd/MM/yyyy") + " || Total Value: " + this.TotalValue.ToString();
+        }
     }
 }
